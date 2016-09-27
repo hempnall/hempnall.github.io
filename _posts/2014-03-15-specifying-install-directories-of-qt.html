@@ -1,0 +1,12 @@
+---
+layout: post
+title: Specifying install directories of QT Libraries and Headers
+date: '2014-03-15T14:31:00.000-07:00'
+author: James Hook
+tags: 
+modified_time: '2014-03-15T14:32:11.149-07:00'
+blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-2610762241582775796
+blogger_orig_url: http://computer-says-yes.blogspot.com/2014/03/specifying-install-directories-of-qt.html
+---
+
+Add a few lines to your .pro file<div><br /></div><pre><br /><br />headers.files = $$HEADERS<br />target.path = /usr/local/lib/yourproj<br />headers.path = /usr/local/include/yourproj<br /><br />INSTALLS += headers target<br /><br /></pre><div><br /></div>
