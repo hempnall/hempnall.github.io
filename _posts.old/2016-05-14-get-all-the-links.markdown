@@ -3,6 +3,7 @@ layout: post
 title: Getting all the links with Wget
 author: James Hook
 tags: linux bash
+visible: 1
 ---
 
 How to download all the links on a page..... use ```wget```!!!

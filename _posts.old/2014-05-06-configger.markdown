@@ -5,6 +5,7 @@ date: '2014-05-06T14:00:00.001-07:00'
 author: James Hook
 tags: 
 modified_time: '2014-05-06T14:00:56.380-07:00'
+visible: 1
 ---
 
 Something I’ve been meaning to look at is how to parse config files in Linux. The first package a came across was ```libconfig``` – downloadable from ```http://www.hyperrealm.com/libconfig/```. This library can also be used to write config files.

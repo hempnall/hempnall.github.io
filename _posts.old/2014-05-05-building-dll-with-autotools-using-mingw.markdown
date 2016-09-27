@@ -7,6 +7,7 @@ tags:
 modified_time: '2014-05-05T11:45:51.350-07:00'
 blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-9126244175200829988
 blogger_orig_url: http://computer-says-yes.blogspot.com/2014/05/building-dll-with-autotools-using-mingw.html
+visible: 1
 ---
 
 This one should have been easy - I wanted to compile Linux source code to create Windows DLLs. I thought it would be easy as that was the one job that Libtool has to do right?!?!?

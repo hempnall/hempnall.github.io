@@ -7,6 +7,7 @@ tags:
 modified_time: '2014-06-01T12:02:11.368-07:00'
 blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-9179836440916245471
 blogger_orig_url: http://computer-says-yes.blogspot.com/2014/06/configuring-r-on-mac-os-x.html
+visible: 1
 ---
 
 You need to download gfortran from the R website then a configure statement like this worked (with a few warnings)  <pre><br /><br />./configure r_arch=x86_64 F77="gfortran -arch x86_64" FC="gfortran -arch x86_64" --with-system-zlib --x-includes=/opt/X11/include --x-libraries=/opt/X11/lib<br /><br /></pre> The warnings...  <pre><br /><br />configure: WARNING: you cannot build PDF versions of the R manuals<br />configure: WARNING: you cannot build PDF versions of vignettes and help pages<br /><br /></pre>

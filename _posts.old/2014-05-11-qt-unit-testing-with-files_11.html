@@ -7,6 +7,7 @@ tags:
 modified_time: '2014-05-11T02:47:10.197-07:00'
 blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-327506571744471243
 blogger_orig_url: http://computer-says-yes.blogspot.com/2014/05/qt-unit-testing-with-files_11.html
+visible: 1
 ---
 
 This is just a quickie blog post building up to creating unit tests for Qt components that have to deal with files on the file system. <br /><br />I want to be able to store these files as part of the GIT repository of the test project. I accept that the tests will only work if the testing project has to be on the machine when the test suite is run. <br />In your .pro file you need to define the pre-processor variable PROJDIR  <br /><br /><pre>DEFINES += PROJDIR=\\\"$${_PRO_FILE_PWD_}\\\"<br /></pre><pre><br /></pre> Then in your source code you can access the pre-processor symbol  <br /><br /> <pre>#include &lt;QCoreApplication&gt;<br /><br />#ifndef PROJDIR<br />#define PROJDIR QString("not defined")<br />#endif<br /><br />#include &lt;QDebug&gt;<br /><br />int main(int argc, char *argv[])<br />{<br />    QCoreApplication a(argc, argv);<br />    qDebug() &lt;&lt; PROJDIR ;<br />    return a.exec();<br />}<br /></pre><pre><br /></pre> now you can reference test files that are relative to the .PRO file!!!

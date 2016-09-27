@@ -7,6 +7,7 @@ tags:
 modified_time: '2014-05-18T08:48:49.025-07:00'
 blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-1989563686747825293
 blogger_orig_url: http://computer-says-yes.blogspot.com/2014/05/qt-getting-command-line-app-debugging.html
+visible: 1
 ---
 
 I've had to do this a number of times. 
