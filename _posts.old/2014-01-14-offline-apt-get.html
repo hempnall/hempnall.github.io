@@ -1,0 +1,13 @@
+---
+layout: post
+title: Offline apt-get
+date: '2014-01-14T03:27:00.000-08:00'
+author: James Hook
+tags: 
+modified_time: '2014-01-14T03:32:14.000-08:00'
+blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-2059552426651133712
+blogger_orig_url: http://computer-says-yes.blogspot.com/2014/01/offline-apt-get.html
+visible: 1
+---
+
+If you ever need to use apt-get on a machine that isn't connected to the Internet then follow these instructions <br /><br />1) Create an identical machine to your offline machine (same architecture, version of debian, ubuntu etc.) <br /><br />2) Clear out the package cache - this is so we get the sub-packages just for the desired package - not for every package you have ever downloaded. <br /><pre>sudo rm /var/cache/apt/archives/*.deb</pre>3) Issue a command to download but not install the desired package <br /><pre>sudo apt-get --download-only install <package_name><br /></package_name></pre>4) Copy .deb files to a CD or USB stick (assume usb stick is empty) <br /><pre>cp /var/cache/apt/archives/*.deb /media/usbstick/</pre>5) insert usb stick into offline machine <br /><br />6) install packages  <br /><pre>sudo dpkg -i /media/usbstick/*.deb<br /></pre><br />Late breaking news.. the following stackoverflow post details the -o option, allowing you output packages into a directory of your choice.<br /><a href="http://stackoverflow.com/questions/4419268/how-do-i-download-a-package-from-apt-get-without-installing-it">http://stackoverflow.com/questions/4419268/how-do-i-download-a-package-from-apt-get-without-installing-it </a>

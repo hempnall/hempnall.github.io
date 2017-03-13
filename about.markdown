@@ -2,9 +2,10 @@
 layout: markdown
 title: About
 permalink: /about/
+navbar: true
 ---
 
-Hempnall Information Systems are based in Bristol.
+Hempnall Information Services are based in Bristol.
 
 We comprise:
 

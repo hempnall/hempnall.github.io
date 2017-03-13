@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2016-05-05 18:35:16 +0100
 categories: jekyll update
+visible: 1
 ---
 
 Just thought I'd start using Jekyll, it would have been nice if hadn't been so quirky. Still, what do you expect for apps written in Ruby?

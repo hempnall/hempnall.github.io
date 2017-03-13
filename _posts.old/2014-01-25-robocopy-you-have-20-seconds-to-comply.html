@@ -1,0 +1,13 @@
+---
+layout: post
+title: Robocopy - you have 20 seconds to comply!!
+date: '2014-01-25T01:56:00.002-08:00'
+author: James Hook
+tags: 
+modified_time: '2014-01-25T01:56:21.738-08:00'
+blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-5395798237253084424
+blogger_orig_url: http://computer-says-yes.blogspot.com/2014/01/robocopy-you-have-20-seconds-to-comply.html
+visible: 1
+---
+
+Just a handy tip for backing up precious data (in my case, my video collection)<br /><br />If you're cautious, do a test run: (ROBOCOPY can delete data!!)<br /><br /><pre>robocopy [source] [dest] /MIR /L</pre><br />The /L&nbsp; switch tells robocopy to "list only".<br /><br />Then, once you're satisfied, let it go for real by removing the /L switch..<br /> <pre>robocopy [source] [dest] /MIR </pre>

@@ -1,0 +1,16 @@
+---
+layout: post
+title: My network interface disappears on a reboot :-(
+date: '2013-12-04T01:28:00.001-08:00'
+author: James Hook
+tags:
+- Linux
+- Networking
+- Troubleshooting
+modified_time: '2013-12-04T01:28:40.073-08:00'
+blogger_id: tag:blogger.com,1999:blog-5482187274444893467.post-4765305734845508969
+blogger_orig_url: http://computer-says-yes.blogspot.com/2013/12/my-network-interface-disappears-on.html
+hidden: true
+---
+
+No worries - regardless of how much I understand it, just running <pre>modprobe</pre> seems to get it working again.  <pre><br />sudo modprobe e1000e<br />sudo /etc/init.d/networking restart<br /></pre>  The driver was make'd and insatlled from <pre>e1000e-2.4.14.tar.gz</pre>
