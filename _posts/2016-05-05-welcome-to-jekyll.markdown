@@ -7,7 +7,7 @@ categories: jekyll update
 
 Just thought I'd start using Jekyll, it would have been nice if hadn't been so quirky. Still, what do you expect for apps written in Ruby?
 
-![Just testing I can put a cat picture in here]({{ site.url }}/assets/cat_test.jpg)
+![Just testing I can put a cat picture in here]({{ site.url }}/assets/cat_test.jpeg)
 
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
